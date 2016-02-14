@@ -5,12 +5,18 @@ ENV LANG en_US.UTF-8
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
 ENV LANGUAGE en_US.UTF-8
-ENV TERM xterm
 
 RUN apt-get update -q \
-    && apt-get install -y \
+    && apt-get install -yq --force-yes \
         curl \
+        ca-certificates curl \
+        dnsutils \
+        git \
         python \
-        python-setuptools
+        python-setuptools \
+        rsync \
+        unzip \
+        vim \
+        whois \
 
 CMD bash
