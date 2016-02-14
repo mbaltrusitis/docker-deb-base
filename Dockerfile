@@ -17,6 +17,6 @@ RUN apt-get update -q \
         rsync \
         unzip \
         vim \
-        whois \
+        whois
 
 CMD bash
