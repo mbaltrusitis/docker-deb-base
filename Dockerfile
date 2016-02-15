@@ -15,6 +15,7 @@ RUN apt-get update -q \
         vim \
         whois \
     && mkdir -p ~/.ssh \
-    && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+    && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts \
+    && chmod 0644 ~/.ssh/known_hosts
 
 CMD bash
