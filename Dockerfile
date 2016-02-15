@@ -14,6 +14,7 @@ RUN apt-get update -q \
         unzip \
         vim \
         whois \
+    && mkdir -p ~/.ssh \
     && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
 CMD bash
