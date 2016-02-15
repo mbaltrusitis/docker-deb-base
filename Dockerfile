@@ -13,6 +13,7 @@ RUN apt-get update -q \
         rsync \
         unzip \
         vim \
-        whois
+        whois \
+    && ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
 CMD bash
