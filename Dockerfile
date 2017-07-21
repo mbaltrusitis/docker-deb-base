@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update -q \
     && apt-get install -yq --force-yes \
         curl \
-        ca-certificates curl \
+        ca-certificates \
         dnsutils \
         git \
         python \
